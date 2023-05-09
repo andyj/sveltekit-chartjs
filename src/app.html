@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Lato&display=swap');
+		*{
+			font-family: 'Lato', sans-serif;
+			font-weight: 100;
+		}
+		code,xmp,pre,samp,kbd{
+			font-family: 'Source Code Pro',monospace;
+			background-color: #3a3a3a;
+			color:white;
+			
+		}
+		pre{
+			font-family: 'Source Code Pro',monospace;
+			padding:10px 2px;
+			border-radius: 5px;
+		}
+		
+		.btn {
+			appearance: none;
+			-webkit-appearance: none;
+			font-family: sans-serif;
+			cursor: pointer;
+			padding: 12px;
+			min-width: 100px;
+			border: 0px;
+			-webkit-transition: background-color 100ms linear;
+			-ms-transition: background-color 100ms linear;
+			transition: background-color 100ms linear;
+		}
+		
+		.btn-primary {
+			border-radius: 10px;
+			background: #3498db;
+			color: #ffffff;
+		}
+	</style>		
+</head>
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
 </html>
